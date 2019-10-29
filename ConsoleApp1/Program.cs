@@ -1,5 +1,6 @@
 ﻿using System;
-
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
 
 namespace ConsoleApp1
 {
@@ -12,10 +13,9 @@ namespace ConsoleApp1
 
         static string ReadPdf(string path) {
 
-            // treba pridat using itextsharp
             using (PdfReader reader = new PdfReader(path))
             {
-                StringBuilder text = new StringBuilder();
+                System.Text.StringBuilder text = new System.Text.StringBuilder();
 
                 for (int i = 1; i <= reader.NumberOfPages; i++)
                 {
