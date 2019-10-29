@@ -8,5 +8,9 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello world!");
         }
+
+        static string ReadPdf(string path) {
+            return "nieco";
+        }
     }
 }
